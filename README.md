@@ -1,2 +1,2 @@
 # ca2map
-Get map icons from Capture Age screenshots.
+Get map images from Capture Age screenshots.
