@@ -8,7 +8,7 @@ st.write("## Get a pretty Age of Empires II map image from a Capture Age screens
 st.write(
     "Try uploading a screenshot to see the map image. Full quality images can be downloaded below the preview."
 )
-st.sidebar.write("## :gear: Settings")
+st.sidebar.write("## ⚙️ Settings")
 center = st.sidebar.checkbox('Minimap is in the center')
 grey_border = st.sidebar.checkbox('Add grey border')
 st.sidebar.write("## ⬆️ Upload")
@@ -103,7 +103,7 @@ def convert_image(img):
 
 def get_map_icon(upload):
     full_image = Image.open(upload)
-    col1.write("### :camera: CA screenshot")
+    col1.write("### 📷 CA screenshot")
     col1.image(full_image)
 
     cropped_image = crop_to_box(full_image)
