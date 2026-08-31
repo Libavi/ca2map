@@ -121,7 +121,7 @@ def get_map_icon(upload):
     col2.write("### 🗺️ map image preview")
     col2.image(final_image)
     st.sidebar.markdown("\n")
-    col2.download_button("⬇️ Download full quality map image", convert_image(final_image), filename.value or "map.png", "image/png")
+    col2.download_button("⬇️ Download full quality map image", convert_image(final_image), filename or "map.png", "image/png")
 
 col1, col2 = st.columns(2)
 my_upload = st.sidebar.file_uploader("In Capture Age, make sure to fully zoom out before taking the screenshot!",
